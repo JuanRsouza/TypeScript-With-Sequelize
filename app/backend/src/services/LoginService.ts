@@ -18,4 +18,9 @@ export default class LoginService {
     const token = generateToken({ id: user.id });
     return token;
   }
+
+  async getRole(id: number) {
+    const user = await this.loginModel.getUserById(id);
+    return user.role;
+  }
 }
