@@ -12,4 +12,9 @@ export default class MatchesService {
     const matches = await this.matchesModel.getMatchesForProgress(changeToBoolean);
     return matches;
   }
+
+  async finishMatch(id: number) {
+    const match = await this.matchesModel.finishMatch(id);
+    return match;
+  }
 }

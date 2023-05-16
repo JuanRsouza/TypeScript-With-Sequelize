@@ -44,4 +44,12 @@ export default class MatchesModel {
     });
     return matches;
   }
+
+  async finishMatch(id: number) {
+    const match = await this.matche.update(
+      { inProgress: false },
+      { where: { id } },
+    );
+    return match;
+  }
 }
