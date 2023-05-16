@@ -13,8 +13,11 @@ class Matches extends Model {
 Matches.init({
   homeTeamId: {
     type: DataTypes.INTEGER,
-    primaryKey: true,
     allowNull: false,
+    references: {
+      model: 'teams',
+      key: 'id',
+    },
   },
   homeTeamGoals: {
     type: DataTypes.INTEGER,
@@ -22,8 +25,11 @@ Matches.init({
   },
   awayTeamId: {
     type: DataTypes.INTEGER,
-    primaryKey: true,
     allowNull: false,
+    references: {
+      model: 'teams',
+      key: 'id',
+    },
   },
   awayTeamGoals: {
     type: DataTypes.INTEGER,
