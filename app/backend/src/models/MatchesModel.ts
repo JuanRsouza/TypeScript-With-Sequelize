@@ -52,4 +52,12 @@ export default class MatchesModel {
     );
     return match;
   }
+
+  async updateMatch(id: number, homeTeamGoals: number, awayTeamGoals: number) {
+    const match = await this.matche.update(
+      { homeTeamGoals, awayTeamGoals },
+      { where: { id } },
+    );
+    return match;
+  }
 }
