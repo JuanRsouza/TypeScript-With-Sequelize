@@ -60,4 +60,20 @@ export default class MatchesModel {
     );
     return match;
   }
+
+  async createMatch(
+    homeTeamId: number,
+    awayTeamId: number,
+    homeTeamGoals: number,
+    awayTeamGoals: number,
+  ) {
+    const newMatch = await this.matche.create({
+      homeTeamId,
+      awayTeamId,
+      homeTeamGoals,
+      awayTeamGoals,
+      inProgress: true,
+    });
+    return newMatch;
+  }
 }
