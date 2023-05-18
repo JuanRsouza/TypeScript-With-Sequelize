@@ -74,6 +74,7 @@ export default class MatchesModel {
       awayTeamGoals,
       inProgress: true,
     });
+    console.log(newMatch);
     return newMatch;
   }
 }
