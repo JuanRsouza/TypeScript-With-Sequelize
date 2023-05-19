@@ -5,7 +5,7 @@ export default class LeaderBoardController {
   constructor(private leaderBoardService = new LeaderBoardService()) {}
 
   async getLeaderBoard(_req: Request, res: Response) {
-    const leaderBoard = await this.leaderBoardService.getLeaderBoard();
+    const leaderBoard = await this.leaderBoardService.sortLeaderBoard();
     return res.status(200).json(leaderBoard);
   }
 }
