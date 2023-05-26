@@ -1,13 +1,4 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+A proposta do projeto (TFC) é desenvolver uma aplicação que consulte um Banco de Dados contendo informações sobre times de futebol. O projeto permite o cadastro de usuários e tem como objetivo fornecer informações detalhadas sobre os times, além de disponibilizar dados relevantes sobre as partidas do campeonato, fazendo uma associação entre as tabelas. O projeto foi desenvolvido utilizando TypeScript com orientação a objetos (POO), Express para criar os endpoints da API REST e Sequelize como ORM para consultar o banco de dados. A autenticação de acesso é realizada utilizando JWT e o código segue uma arquitetura em camadas para facilitar a manutenção e escalabilidade do sistema.
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
-
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Desenvolvido por mim: Backend
+Desenvolvido pela trybe: Frontend
